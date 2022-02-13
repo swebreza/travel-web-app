@@ -1,27 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
 .App {
+  /* text-align: center; */
+  font-family: 'playfair';
+  position: relative;
   text-align: center;
+  font-family: 'Bakbak One', cursive;
+
+  /* color: white; */
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: relative;
+  display: block;
+  left: 1em;
+  top: 1em;
+  width: 80px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    /* animation: App-logo-spin infinite 20s linear; */
   }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -32,7 +43,505 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* @media only screen and (max-width: 600px) {
+
+  body,
+  .body {
+    text-align: center;
+
+    /* background-position: center; */
+/* background-repeat: no-repeat;
+background-size: cover;
+
+} */
+
+/* .initbtn { */
+/* display: block; */
+
+/* text-align: center; */
+/* width: 339px; */
+/* height: 74px; */
+/* text-align: center; */
+/* margin-left: auto; */
+/* margin-right: auto; */
+/* width: 90%; */
+/* top: 701px; */
+/* left: ; */
+/* } */
+
+
+/* } */
+
+*/ #headertext {
+  font-size: 45px;
+
+}
+
+.home {
+  text-align: center;
+  height: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./assets/smile.jpg);
+
+}
+
+.initbtn {
+
+  /* position: absolute; */
+  display: block;
+  width: 70%;
+  height: 74px;
+  top: 701px;
+
+}
+
+.initbtnp {
+  padding-bottom: 2em;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hello {
+  /* Hello,Leonard! */
+
+
+  position: absolute;
+  width: 248px;
+  height: 106px;
+  left: 18px;
+  top: 514px;
+
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 53px;
+  /* or 118% */
+
+
+  color: #000000;
+}
+
+
+
+.username {
+  position: absolute;
+  width: 270px;
+  height: 50px;
+  left: 53px;
+  top: 290px;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.password {
+  position: absolute;
+  width: 270px;
+  height: 50px;
+  left: 53px;
+  width: 70%;
+  top: 362px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.login {
+  position: absolute;
+  width: 84px;
+  height: 45px;
+  left: 40%;
+  top: 226px;
+
+
+  font-family: Bakbak One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 1px;
+  /* or 5% */
+
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+
+}
+
+.loginbtn {
+  /* Group 48 */
+
+
+  position: absolute;
+  width: 134px;
+  height: 31px;
+  left: 119px;
+  top: 469px;
+  left: 33.3%;
+
+}
+
+.signupd {
+  /* Group 49 */
+
+
+  position: absolute;
+  width: 138px;
+  height: 32px;
+  left: 33.3%;
+  top: 538px;
+
+}
+
+.or {
+  /* Group 50 */
+
+
+  /* position: absolute; */
+  /* width: 370px; */
+  /* height: 18px; */
+  /* left: 0.1%; */
+  /* width: 100%; */
+  /* top: 590px; */
+
+}
+
+.facebook {
+  /* Vector */
+
+
+  /* position: absolute;
+  left: 20.53%;
+  right: 66.13%;
+  top: 630px; */
+  /* bottom: 16.63%; */
+
+  background: 000000;
+}
+
+.twitter {
+  /* Vector */
+
+  /* 
+  position: absolute;
+  left: 43.47%;
+  right: 43.2%;
+  top: 630px; */
+  /* bottom: 16.63%; */
+
+
+}
+
+.google {
+  /* Vector */
+
+
+  /* position: absolute;
+  left: 66.4%;
+  right: 20.27%;
+  top: 630px; */
+  /* bottom: 16.63%; */
+
+}
+
+.signup {
+  /* Signup */
+
+
+  position: absolute;
+  width: 93px;
+  height: 79px;
+  left: 139px;
+  top: 133px;
+
+  font-family: Bakbak One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 80px;
+  /* or 286% */
+
+
+  color: #000000;
+
+}
+
+.password2 {
+  /* Rectangle 114 */
+
+
+  position: absolute;
+  width: 262px;
+  height: 61px;
+  left: 57px;
+  top: 321px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.password3 {
+  /* Rectangle 116 */
+
+
+  position: absolute;
+  width: 262px;
+  height: 61px;
+  left: 57px;
+  top: 414px;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+.username2 {
+  /* Rectangle 113 */
+
+
+  position: absolute;
+  width: 270px;
+  height: 61px;
+  left: 53px;
+  top: 224px;
+
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.logind {
+  position: absolute;
+  width: 132px;
+  height: 35px;
+  left: 118px;
+  top: 582px;
+
+}
+
+.signupl {
+  /* Group 51 */
+
+
+  position: absolute;
+  width: 134px;
+  height: 31px;
+  left: 117px;
+  top: 509px;
+
+}
+
+.or2 {
+  /* Group 53 */
+
+
+  position: absolute;
+  width: 370px;
+  height: 18px;
+  left: 3px;
+  top: 646px;
+}
+
+.facebook2 {
+  /* Vector */
+
+
+  position: absolute;
+  left: 20.53%;
+  right: 66.13%;
+  top: 687px;
+  bottom: 9.24%;
+
+}
+
+.twitter2 {
+  /* Vector */
+
+
+  /* Vector */
+
+
+  position: absolute;
+  left: 43.47%;
+  right: 43.2%;
+  top: 687px;
+  bottom: 9.24%;
+
+
+}
+
+.google2 {
+  /* Vector */
+
+
+  /* Vector */
+
+
+  position: absolute;
+  left: 66.4%;
+  right: 20.27%;
+  top: 687px;
+  bottom: 9.24%;
+
+}
+
+.search {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 312px;
+  top: 48px;
+
+}
+
+.discover {
+  /* Discover, Amsterdam! */
+
+
+  position: absolute;
+  width: 311px;
+  height: 91px;
+  left: 24px;
+  top: 102px;
+
+  font-family: Bakbak One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 40px;
+  /* or 143% */
+
+
+  color: #000000;
+}
+
+.menu {
+  /* Group 2 */
+
+
+  position: fixed;
+  width: 67px;
+  height: 67px;
+  right: 5%;
+  bottom: 5%;
+
+}
+
+/* ------------------------------------- */
+.wrapper {
+  font-size: medium;
+  max-height: 60px;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.wrapper .item {
+  width: 90px;
+  height: 55px;
+  line-height: 34px;
+  margin-right: 2px;
+}
+
+.header1 {
+  position: absolute;
+  left: 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  /* identical to box height, or 141% */
+  display: flex;
+  align-items: center;
+  color: #666462;
+
+}
+
+.cardSlider {
+  position: absolute;
+  width: 197px;
+  height: 115px;
+  top: 500px;
+
+
+
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.five {
+  position: absolute;
+  width: 49px;
+  height: 21px;
+  left: 150px;
+  top: 10px;
+}
+
+img {
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+/* .grid-container {
+  display: grid;
+  position: absolute;
+  width: 300px;
+  height: 199px;
+  grid-template-columns: auto auto auto auto;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 35px;
+  /* border-radius: 0px; */
+
+/* } */
+
+.items {
+  width: 50px;
+}
+
+
+.lightbutton {
+  background-color: #D5E2E5;
+  color: #000000;
+  border: 0px solid #aebabd;
+  font-size: medium;
+  border-radius: 8px;
+  width: 100px;
+}
+
+.darkbutton {
+  background-color: #000000;
+  color: #fff;
+  font-size: medium;
+  border-radius: 8px;
+  width: 100px;
+
+}
+
+.link {
+  text-decoration: none;
 }
