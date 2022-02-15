@@ -16,6 +16,9 @@ import History from './childpages/history'
 import Cart from './childpages/cart'
 import Details from './childpages/details'
 import Payment from './childpages/payment'
+import Offers from './childpages/offers'
+import Feedback from './childpages/feedback'
+import Pro from './childpages/pro'
 
 export const userContext = React.createContext()
 function App() {
@@ -47,8 +50,17 @@ function App() {
           <Route path='/childpages/details'>
             <Details />
           </Route>
+          <Route path='/childpages/offers'>
+            <Offers />
+          </Route>
           <Route path='/childpages/payment'>
             <Payment />
+          </Route>
+          <Route path='/childpages/feedback'>
+            <Feedback />
+          </Route>
+          <Route path='/childpages/pro'>
+            <Pro />
           </Route>
           <Route path='*'></Route>
         </Switch>

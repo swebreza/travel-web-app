@@ -1,6 +1,7 @@
 import NavBar from '../Navbar'
-import { Row, Col, Container, Card, Button } from 'react-bootstrap'
+import { Row, Col, Container, Card } from 'react-bootstrap'
 import pune from '../assets/pune.png'
+import { Link } from 'react-router-dom'
 
 const History = () => {
   return (
@@ -26,38 +27,14 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -78,12 +55,42 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>{' '}
+            <Col sm>
+              <Card style={{ width: '100%', textAlign: 'left' }}>
+                <Card.Body>
+                  <Row xs={2}>
+                    <Col xs={4}>
+                      <img
+                        src={pune}
+                        alt=''
+                        srcset=''
+                        style={{ width: '120%' }}
+                      />
+                    </Col>
+                    <Col xs={8}>
+                      <Card.Title>Pune</Card.Title>
+                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -108,38 +115,14 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -160,12 +143,42 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>{' '}
+            <Col sm>
+              <Card style={{ width: '100%', textAlign: 'left' }}>
+                <Card.Body>
+                  <Row xs={2}>
+                    <Col xs={4}>
+                      <img
+                        src={pune}
+                        alt=''
+                        srcset=''
+                        style={{ width: '120%' }}
+                      />
+                    </Col>
+                    <Col xs={8}>
+                      <Card.Title>Pune</Card.Title>
+                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -190,38 +203,14 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>
@@ -242,12 +231,42 @@ const History = () => {
                     <Col xs={8}>
                       <Card.Title>Pune</Card.Title>
                       <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <button
-                        className='lightbutton'
-                        style={{ width: '100%', height: '2em' }}
-                      >
-                        Book Again
-                      </button>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
+                    </Col>
+                  </Row>
+                </Card.Body>
+              </Card>
+            </Col>{' '}
+            <Col sm>
+              <Card style={{ width: '100%', textAlign: 'left' }}>
+                <Card.Body>
+                  <Row xs={2}>
+                    <Col xs={4}>
+                      <img
+                        src={pune}
+                        alt=''
+                        srcset=''
+                        style={{ width: '120%' }}
+                      />
+                    </Col>
+                    <Col xs={8}>
+                      <Card.Title>Pune</Card.Title>
+                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
+                      <Link to='./details'>
+                        <button
+                          className='lightbutton'
+                          style={{ width: '100%', height: '2em' }}
+                        >
+                          Book Again
+                        </button>
+                      </Link>
                     </Col>
                   </Row>
                 </Card.Body>

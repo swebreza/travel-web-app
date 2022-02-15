@@ -8,7 +8,7 @@ const Cart = () => {
     <div>
       {' '}
       <NavBar />
-      <p style={{ fontSize: 'xx-large' }}>Booking History</p>
+      <p style={{ fontSize: 'xx-large' }}>Cart</p>
       <div>
         <Container>
           <Row>

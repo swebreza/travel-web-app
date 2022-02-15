@@ -65,12 +65,23 @@ const NavBar = () => {
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to='' style={{ textDecoration: 'none' }}>
+                  <Link
+                    to='../childpages/feedback'
+                    style={{ textDecoration: 'none' }}
+                  >
                     <img src={feedback} alt='' srcset='' />
                     feedback
                   </Link>
                 </Nav.Link>
-
+                <Nav.Link>
+                  <Link
+                    to='../childpages/offers'
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <img src={offers} alt='' srcset='' />
+                    offers
+                  </Link>
+                </Nav.Link>
                 <Nav.Link>
                   <Link to='' style={{ textDecoration: 'none' }}>
                     <img src={dos} alt='' srcset='' />
@@ -87,6 +98,15 @@ const NavBar = () => {
                   <Link to='' style={{ textDecoration: 'none' }}>
                     <img src={logout} alt='' srcset='' />
                     logout
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link
+                    to='../childpages/pro'
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <img src={logout} alt='' srcset='' />
+                    pro
                   </Link>
                 </Nav.Link>
               </Nav>

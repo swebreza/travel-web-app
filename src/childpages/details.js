@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import pune from '../assets/pune.jpg'
 import star from '../assets/star.svg'
 import halfstar from '../assets/halfstar.svg'
+import Ratings from './rating'
 
 const Details = () => {
   return (
@@ -42,11 +43,7 @@ const Details = () => {
                     <Row>
                       <Col xs={3}>Rating</Col>
                       <Col>
-                        <img src={star} alt='' srcset='' />
-                        <img src={star} alt='' srcset='' />
-                        <img src={star} alt='' srcset='' />
-                        <img src={star} alt='' srcset='' />
-                        <img src={halfstar} alt='' srcset='' />
+                        <Ratings />
                       </Col>
                     </Row>
                     <Form>

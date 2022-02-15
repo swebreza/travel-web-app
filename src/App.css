@@ -545,3 +545,11 @@ img {
 .link {
   text-decoration: none;
 }
+
+.bgimage {
+  position: sticky;
+  background-image: url("./assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
