@@ -1,42 +1,56 @@
-import search from '../assets/search.svg'
-import logo from '../assets/Vector.svg'
-import discover from '../assets/Discover.svg'
-import menu from '../assets/menu.png'
 import ImageSilder from './imageSlider'
-import bicycle from '../assets/bicycle.png'
-import five from '../assets/5.0.png'
-import { useState } from 'react'
-import Grid from './grid'
+
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Row, Col, Container } from 'react-bootstrap'
+import { Row, Col, Container, Card } from 'react-bootstrap'
 import NavBar from '../Navbar'
+import data from '../data'
+import { Link } from 'react-router-dom'
 
 const Index = () => {
-  const x = <img src={menu} alt='' srcset='' className='menu' />
-  const [menus, setMenu] = useState(x)
-  const menuHandle = (event) => {
-    if (menu) setMenu(<Grid style={{ position: 'absolute', left: '0px' }} />)
-  }
   return (
     <div>
       <NavBar />
       <br /> <ImageSilder />
+      <br />
       <p>Nearby activities</p>
       <div>
         <Container>
           <Row>
-            <Col sm>
-              <img src={bicycle} alt='' srcset='' />
-              <p> Biking the city</p>
-            </Col>
-            <Col sm>
-              <img src={bicycle} alt='' srcset='' />
-              <p> Biking the city</p>
-            </Col>
-            <Col sm>
-              <img src={bicycle} alt='' srcset='' />
-              <p> Biking the city</p>
-            </Col>
+            {' '}
+            {data.map((d) => (
+              <Col sm={6}>
+                <Card style={{ borderRadius: '10px' }}>
+                  <div key={d.id}>
+                    <center>
+                      <Link
+                        to={{
+                          pathname: '../childpages/details',
+                          state: {
+                            id: d.id,
+                            image: d.image,
+                            name: d.name,
+                            description: d.description,
+                            cost: d.cost,
+                          },
+                        }}
+                      >
+                        <img
+                          src={d.image}
+                          alt=''
+                          srcset=''
+                          style={{
+                            width: '100%',
+                            height: '300px',
+                          }}
+                        />
+                      </Link>
+                    </center>
+                  </div>
+
+                  <p> {d.name}</p>
+                </Card>{' '}
+              </Col>
+            ))}
           </Row>
         </Container>
       </div>

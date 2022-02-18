@@ -1,8 +1,11 @@
 import NavBar from '../Navbar'
 import { Form, Row, Col, Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min'
 
 const Payment = () => {
+  const location = useLocation()
+  const { cost } = location.state
   return (
     <div>
       <NavBar />
@@ -47,7 +50,7 @@ const Payment = () => {
           <br />
           <Row>
             <Col style={{ textAlign: 'left' }}>Cost of trip</Col>
-            <Col style={{ textAlign: 'right' }}>$1000</Col>
+            <Col style={{ textAlign: 'right' }}>${cost}</Col>
           </Row>
           <Row>
             <Col style={{ textAlign: 'left' }}>Taxs</Col>
@@ -59,7 +62,7 @@ const Payment = () => {
           </Row>
           <Row>
             <Col style={{ textAlign: 'left' }}>Total</Col>
-            <Col style={{ textAlign: 'right' }}>$1100</Col>
+            <Col style={{ textAlign: 'right' }}>${cost + 10}</Col>
           </Row>
         </Container>
         <p>

@@ -19,6 +19,7 @@ import Payment from './childpages/payment'
 import Offers from './childpages/offers'
 import Feedback from './childpages/feedback'
 import Pro from './childpages/pro'
+import Packages from './childpages/packages'
 
 export const userContext = React.createContext()
 function App() {
@@ -61,6 +62,9 @@ function App() {
           </Route>
           <Route path='/childpages/pro'>
             <Pro />
+          </Route>
+          <Route path='/childpages/packages'>
+            <Packages />
           </Route>
           <Route path='*'></Route>
         </Switch>

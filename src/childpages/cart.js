@@ -1,7 +1,7 @@
 import NavBar from '../Navbar'
 import { Row, Col, Container, Card } from 'react-bootstrap'
-import pune from '../assets/pune.png'
 import { Link } from 'react-router-dom'
+import data from '../data'
 
 const Cart = () => {
   return (
@@ -12,403 +12,64 @@ const Cart = () => {
       <div>
         <Container>
           <Row>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
+            {data.map((d) => (
+              <Col sm={6}>
+                <Card style={{ width: '90%', textAlign: 'left' }}>
+                  <Card.Body>
+                    <div key={d.id}>
+                      <Row xs={2}>
+                        <Col xs={4}>
+                          <img
+                            src={d.image}
+                            alt=''
+                            srcset=''
+                            style={{ width: '100%', height: '100px' }}
+                          />
                         </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
+                        <Col xs={8}>
+                          <Card.Title> {d.name}</Card.Title>
+                          <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
+                          <Link
+                            to={{
+                              pathname: './details',
+                              state: {
+                                id: d.id,
+                                image: d.image,
+                                name: d.name,
+                                description: d.description,
+                                cost: d.cost,
+                              },
+                            }}
+                          >
+                            <Row>
+                              <Col sm>
+                                <button
+                                  className='lightbutton'
+                                  style={{ width: '100%', height: '2em' }}
+                                >
+                                  Confirm
+                                </button>
+                              </Col>
+                              <Col sm>
+                                {' '}
+                                <button
+                                  className='darkbutton'
+                                  style={{ width: '100%', height: '2em' }}
+                                >
+                                  Cancel
+                                </button>
+                              </Col>
+                            </Row>
                           </Link>
                         </Col>
                       </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
+                    </div>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
           </Row>
         </Container>{' '}
-        <Container>
-          <Row>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>{' '}
-        <Container>
-          <Row>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col sm>
-              <Card style={{ width: '100%', textAlign: 'left' }}>
-                <Card.Body>
-                  <Row xs={2}>
-                    <Col xs={4}>
-                      <img
-                        src={pune}
-                        alt=''
-                        srcset=''
-                        style={{ width: '120%' }}
-                      />
-                    </Col>
-                    <Col xs={8}>
-                      <Card.Title>Pune</Card.Title>
-                      <Card.Text>Jan 10 - Jan 25 2022</Card.Text>
-                      <Row>
-                        <Col>
-                          <Link to='./details'>
-                            <button
-                              className='lightbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Confirm
-                            </button>
-                          </Link>
-                        </Col>
-                        <Col>
-                          {' '}
-                          <Link to='./details'>
-                            <button
-                              className='darkbutton'
-                              style={{ width: '100%', height: '2em' }}
-                            >
-                              Cancel
-                            </button>
-                          </Link>
-                        </Col>
-                      </Row>
-                    </Col>
-                  </Row>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
       </div>
       <br />
     </div>

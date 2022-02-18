@@ -2,12 +2,15 @@
 import NavBar from '../Navbar'
 import { Row, Col, Container, Card, Form } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import pune from '../assets/pune.jpg'
-import star from '../assets/star.svg'
-import halfstar from '../assets/halfstar.svg'
+
 import Ratings from './rating'
 
+import { useLocation } from 'react-router-dom/cjs/react-router-dom.min'
+
 const Details = () => {
+  const location = useLocation()
+  const { name, id, image, description, cost } = location.state
+
   return (
     <div>
       <NavBar />
@@ -20,7 +23,7 @@ const Details = () => {
                 <Row>
                   <Col sm={4}>
                     <img
-                      src={pune}
+                      src={image}
                       alt=''
                       srcset=''
                       style={{ width: '100%', borderRadius: '10px' }}
@@ -28,17 +31,17 @@ const Details = () => {
                   </Col>
                   <Col sm={8}>
                     <Card.Title>
-                      <h2>Pune</h2>
+                      <h2>{name}</h2>
                     </Card.Title>
+                    <Card.Text>
+                      only at
+                      <span style={{ color: '#f8a100' }}> ${cost}/-</span>
+                    </Card.Text>
                     <Card.Text style={{ color: '#D5E5E2' }}>
                       Description
                     </Card.Text>
                     <Card.Text style={{ color: '#8E8E8E' }}>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to make a
-                      type specimen book.
+                      {description}
                     </Card.Text>
                     <Row>
                       <Col xs={3}>Rating</Col>
@@ -75,7 +78,14 @@ const Details = () => {
                     </Form>
                     <br />
                     <Row>
-                      <Link to='./payment'>
+                      <Link
+                        to={{
+                          pathname: './payment',
+                          state: {
+                            cost: cost,
+                          },
+                        }}
+                      >
                         <button
                           className='lightbutton'
                           style={{

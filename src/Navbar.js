@@ -7,8 +7,9 @@ import search from './assets/search.svg'
 import dos from "./assets/do's.png"
 import done from "./assets/done's.png"
 import profile from './assets/profile.png'
+import pro from './assets/pro.svg'
 import logo from './assets/Vector.svg'
-
+import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   Navbar,
@@ -18,8 +19,24 @@ import {
   Form,
   FormControl,
 } from 'react-bootstrap'
+import { useEffect, useState } from 'react'
+import data from './data'
 
 const NavBar = () => {
+  const [searchTerm, setSearchTerm] = useState('')
+  const [output, setoutput] = useState([])
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value)
+  }
+  useEffect(() => {
+    setoutput([])
+    data.filter((val) => {
+      if (val.name.toLowerCase().includes(searchTerm.toLowerCase())) {
+        setoutput((output) => [...output, val])
+      }
+    })
+  }, [searchTerm])
+
   return (
     <div>
       {' '}
@@ -38,10 +55,13 @@ const NavBar = () => {
                 id='offcanvasNavbarLabel'
                 style={{ color: 'black' }}
               >
-                <Link to=''>
+                <Link
+                  to='/initial/index'
+                  style={{ textDecoration: 'none', color: 'black  ' }}
+                >
                   <img src={profile} alt='' srcset='' className='items' />
+                  Suweb Reza
                 </Link>
-                Suweb Reza
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
@@ -105,8 +125,17 @@ const NavBar = () => {
                     to='../childpages/pro'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={logout} alt='' srcset='' />
+                    <img src={pro} alt='' srcset='' />
                     pro
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link
+                    to='../childpages/packages'
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <img src={pro} alt='' srcset='' />
+                    Packages
                   </Link>
                 </Nav.Link>
               </Nav>
@@ -116,11 +145,34 @@ const NavBar = () => {
                   placeholder='Search'
                   className='me-2'
                   aria-label='Search'
+                  value={searchTerm}
+                  onChange={handleChange}
                 />
                 <a href='#'>
                   <img src={search} alt='' srcset='' />
-                </a>
+                </a>{' '}
               </Form>
+              <ul>
+                {output.map((d) => (
+                  <div key={d.id} style={{ color: '#000' }}>
+                    <Link
+                      to={{
+                        pathname: '../childpages/details',
+                        state: {
+                          id: d.id,
+                          image: d.image,
+                          name: d.name,
+                          description: d.description,
+                          cost: d.cost,
+                        },
+                      }}
+                      style={{ textDecoration: 'none' }}
+                    >
+                      {d.name}
+                    </Link>
+                  </div>
+                ))}
+              </ul>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
         </Container>

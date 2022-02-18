@@ -76,17 +76,26 @@ const Pro = () => {
                 <Row>
                   <center>
                     <Col style={{ paddingLeft: '2em' }}>
-                      <button
-                        className='lightbutton'
-                        style={{
-                          width: '90%',
-                          height: '2em',
-                          fontSize: '40px',
-                          marginBottom: '10px',
+                      <Link
+                        to={{
+                          pathname: '/childpages/payment',
+                          state: {
+                            cost: 11.6,
+                          },
                         }}
                       >
-                        $9.99/mon
-                      </button>
+                        <button
+                          className='lightbutton'
+                          style={{
+                            width: '90%',
+                            height: '2em',
+                            fontSize: '40px',
+                            marginBottom: '10px',
+                          }}
+                        >
+                          $11.6/mon
+                        </button>
+                      </Link>
                     </Col>
                   </center>
                 </Row>
