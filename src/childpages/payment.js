@@ -52,7 +52,7 @@ const Payment = () => {
 
           <Row>
             <Col style={{ textAlign: 'left' }}>Cost of trip</Col>
-            <Col style={{ textAlign: 'right' }}>${cost}</Col>
+            <Col style={{ textAlign: 'right' }}>$ {cost}</Col>
           </Row>
           <Row>
             <Col style={{ textAlign: 'left' }}>Taxs</Col>
@@ -60,12 +60,12 @@ const Payment = () => {
           </Row>
           <Row>
             <Col style={{ textAlign: 'left' }}>Discount</Col>
-            <Col style={{ textAlign: 'right' }}>${discount * cost}</Col>
+            <Col style={{ textAlign: 'right' }}>$ {discount * cost}</Col>
           </Row>
           <Row>
             <Col style={{ textAlign: 'left' }}>Total</Col>
             <Col style={{ textAlign: 'right' }}>
-              ${cost + 10 - discount * cost}
+              $ {cost + 10 - discount * cost}
             </Col>
           </Row>
         </Container>
