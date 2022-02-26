@@ -31,6 +31,7 @@ const Index = () => {
                             name: d.name,
                             description: d.description,
                             cost: d.cost,
+                            cart: d.cart,
                           },
                         }}
                       >

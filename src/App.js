@@ -3,7 +3,6 @@ import './App.css'
 // import btn from './assets/button.svg'
 // import hello from './assets/Hello.svg'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-// import ComponentC from './conponentc'
 // // import { useContext } from 'react'
 
 import React from 'react'
@@ -20,6 +19,9 @@ import Offers from './childpages/offers'
 import Feedback from './childpages/feedback'
 import Pro from './childpages/pro'
 import Packages from './childpages/packages'
+import Dos from './childpages/dos'
+import Dons from './childpages/dons'
+// import ComponentC from './conponentc'
 
 export const userContext = React.createContext()
 function App() {
@@ -65,6 +67,12 @@ function App() {
           </Route>
           <Route path='/childpages/packages'>
             <Packages />
+          </Route>
+          <Route path='/childpages/dos'>
+            <Dos />
+          </Route>
+          <Route path='/childpages/dons'>
+            <Dons />
           </Route>
           <Route path='*'></Route>
         </Switch>

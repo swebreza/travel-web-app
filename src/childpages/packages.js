@@ -1,6 +1,7 @@
 import NavBar from '../Navbar'
 import { Row, Col, Container, Card, Form } from 'react-bootstrap'
 import pune from '../assets/pune.png'
+// import bangalore from '../assets/bangalore.png'
 import { Link } from 'react-router-dom'
 
 const Packages = () => {
@@ -59,14 +60,14 @@ const Packages = () => {
                   <Row xs={2}>
                     <Col xs={4}>
                       <img
-                        src={pune}
+                        src='https://images.indianexpress.com/2021/05/Bengaluru-Lockdown-1.jpg'
                         alt=''
                         srcset=''
                         style={{ width: '100%' }}
                       />
                     </Col>
                     <Col xs={7} style={{ paddingLeft: '0em' }}>
-                      <Card.Title>Pune</Card.Title>
+                      <Card.Title>Bangalore</Card.Title>
                       <Row xs={10}>
                         <Col>
                           <Form.Control
@@ -87,7 +88,7 @@ const Packages = () => {
                           className='lightbutton'
                           style={{ width: '100%', height: '2em' }}
                         >
-                          $99/week
+                          $129/week
                         </button>
                       </Link>
                     </Col>

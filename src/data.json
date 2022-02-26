@@ -4,69 +4,79 @@
     "name": "Pune",
     "image": "https://resize.indiatvnews.com/en/resize/newbucket/1200_-/2021/07/pune-1625115438.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 299
+    "cost": 299,
+    "cart": false
   },
   {
     "id": 2,
     "name": "Bangalore",
     "image": "https://images.indianexpress.com/2021/05/Bengaluru-Lockdown-1.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 136
+    "cost": 136,
+    "cart": false
   },
   {
     "id": 3,
     "name": "Hyderabad",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/A_typical_charminar_evening.jpg/680px-A_typical_charminar_evening.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 146
+    "cost": 146,
+    "cart": false
   },
   {
     "id": 4,
     "name": "Mumbai",
     "image": "https://upload.wikimedia.org/wikipedia/commons/1/14/Mumbai_Skyline_at_Night.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 751
+    "cost": 751,
+    "cart": false
   },
   {
     "id": 5,
     "name": "Mangalore",
     "image": "https://www.dialabank.com/wp-content/uploads/2019/11/EOkux2BUUAAYdgc.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 654
+    "cost": 654,
+    "cart": false
   },
   {
     "id": 6,
     "name": "Agra",
     "image": "https://lp-cms-production.imgix.net/2019-06/75243789.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 141
+    "cost": 141,
+    "cart": false
   },
   {
     "id": 7,
     "name": "Kolkata",
     "image": "https://cdn.britannica.com/91/110191-050-7BCFD56B/Victoria-Memorial-Hall-Kolkata-India.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 201
+    "cost": 201,
+    "cart": false
   },
   {
     "id": 8,
     "name": "Mysuru",
     "image": "https://www.investkarnataka.co.in/wp-content/uploads/2020/08/Mysuru.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 987
+    "cost": 987,
+    "cart": false
   },
   {
     "id": 9,
     "name": "Lucknow",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Charbagh_Railway_Station%2C_Lucknow.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 314
+    "cost": 314,
+    "cart": false
   },
   {
     "id": 10,
     "name": "Shimla",
     "image": "https://www.clubmahindra.com/blog/media/section_images/shuttersto-1a47b83e6a03271.jpg",
     "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "cost": 114
+    "cost": 114,
+    "cart": false
   }
 ]

@@ -18,12 +18,13 @@ import {
   Offcanvas,
   Form,
   FormControl,
+  Card,
 } from 'react-bootstrap'
 import { useEffect, useState } from 'react'
 import data from './data'
 
 const NavBar = () => {
-  const [searchTerm, setSearchTerm] = useState('')
+  const [searchTerm, setSearchTerm] = useState(' ')
   const [output, setoutput] = useState([])
   const handleChange = (e) => {
     setSearchTerm(e.target.value)
@@ -43,7 +44,9 @@ const NavBar = () => {
       <Navbar bg='light' variant='light' expand={false}>
         <Container fluid>
           <Navbar.Brand href='#' style={{ color: '#fff' }}>
-            <img src={logo} alt='' srcset='' />
+            <Link to='/initial/index'>
+              <img src={logo} alt='' srcset='' />
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle
             style={{ color: '#fff' }}
@@ -103,13 +106,19 @@ const NavBar = () => {
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to='' style={{ textDecoration: 'none' }}>
+                  <Link
+                    to='../childpages/dos'
+                    style={{ textDecoration: 'none' }}
+                  >
                     <img src={dos} alt='' srcset='' />
                     dos
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
-                  <Link to='' style={{ textDecoration: 'none' }}>
+                  <Link
+                    to='../childpages/dons'
+                    style={{ textDecoration: 'none' }}
+                  >
                     <img src={done} alt='' srcset='' />
                     done
                   </Link>
@@ -148,9 +157,9 @@ const NavBar = () => {
                   value={searchTerm}
                   onChange={handleChange}
                 />
-                <a href='#'>
+                <button>
                   <img src={search} alt='' srcset='' />
-                </a>{' '}
+                </button>{' '}
               </Form>
               <ul>
                 {output.map((d) => (
@@ -168,7 +177,7 @@ const NavBar = () => {
                       }}
                       style={{ textDecoration: 'none' }}
                     >
-                      {d.name}
+                      <Card style={{ padding: '0.5em' }}>{d.name}</Card>
                     </Link>
                   </div>
                 ))}

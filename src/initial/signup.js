@@ -1,13 +1,10 @@
 import logo from '../assets/Vector.svg'
 import { Link } from 'react-router-dom'
 import { Form, Row, Col, Container } from 'react-bootstrap'
-// import signup from '../assets/Signup.svg'
-// import loginbtn from '../assets/logind.svg'
-// import signupd from '../assets/signupl.png'
-import or from '../assets/or.svg'
 import facebook from '../assets/facebook.svg'
 import twitter from '../assets/twitter.svg'
 import google from '../assets/google.svg'
+
 const Signup = () => {
   return (
     <div

@@ -1,15 +1,34 @@
 /* eslint-disable react/style-prop-object */
 import NavBar from '../Navbar'
-import { Row, Col, Container, Card, Form } from 'react-bootstrap'
+import { Row, Col, Container, Card, Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import { useState, useEffect } from 'react'
+import offer from '../offers.json'
 import Ratings from './rating'
 
 import { useLocation } from 'react-router-dom/cjs/react-router-dom.min'
-
 const Details = () => {
   const location = useLocation()
-  const { name, id, image, description, cost } = location.state
+  const { name, id, image, description, cost, cart } = location.state
+
+  const [code, setCode] = useState('')
+  const [discount, setdiscount] = useState(0)
+  // const [message, setmessage] = useState('')
+  const HandleChange = (event, discount) => {
+    setCode(event.target.value)
+    console.log(code)
+  }
+  const HandleClick = (discount) => {
+    offer.map((d) => {
+      if (d.key === code) {
+        setdiscount(d.off)
+        // return setmessage('offer Found')
+      }
+      // if (d.key !== code) {
+      //   console.log('FALSE')
+      // }
+    })
+  }
 
   return (
     <div>
@@ -75,6 +94,36 @@ const Details = () => {
                           </Col>
                         </Row>
                       </Form.Group>
+                      <Row style={{ paddingTop: '10px' }}>
+                        <Col>
+                          <Form.Group>
+                            <Form.Control
+                              type='text'
+                              placeholder='promo code'
+                              onChange={HandleChange}
+                            />
+                          </Form.Group>
+                        </Col>
+                        <Col>
+                          {discount}
+                          <Button
+                            className='rebutton'
+                            style={{
+                              backgroundColor: '#000000',
+                              color: '#fff',
+                              fontSize: 'medium',
+                              borderRadius: '8px',
+                              width: '100px',
+                            }}
+                            onClick={HandleClick}
+                          >
+                            Apply
+                          </Button>
+                        </Col>
+                      </Row>
+                      {
+                        //message
+                      }
                     </Form>
                     <br />
                     <Row>
@@ -83,6 +132,8 @@ const Details = () => {
                           pathname: './payment',
                           state: {
                             cost: cost,
+                            cart: cart,
+                            discount: discount,
                           },
                         }}
                       >

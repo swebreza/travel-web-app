@@ -1,0 +1,79 @@
+[
+ {
+  "id": 0,
+  "name": "30% OFF",
+  "key": "APPLE",
+  "off": 0.3,
+  "valid": "30jan"
+ },
+ {
+  "id": 1,
+  "name": "10% OFF",
+  "key": "10OFF",
+  "off": 0.1,
+  "valid": "30jan"
+ },
+ {
+  "id": 2,
+  "name": "35% OFF",
+  "key": "35OFF",
+  "off": 0.35,
+  "valid": "30jan"
+ },
+ {
+  "id": 3,
+  "name": "20% OFF",
+  "key": "20OFF",
+  "off": 0.2,
+  "valid": "3Feb"
+ },
+ {
+  "id": 4,
+  "name": "25% OFF",
+  "key": "25OFF",
+  "off": 0.25,
+  "valid": "1Mar"
+ },
+ {
+  "id": 5,
+  "name": "50% OFF",
+  "key": "50OFF",
+  "off": 0.5,
+  "valid": "12Mar"
+ },
+ {
+  "id": 6,
+  "name": "12% OFF",
+  "key": "12OFF",
+  "off": 0.12,
+  "valid": "21Mar"
+ },
+ {
+  "id": 7,
+  "name": "24% OFF",
+  "key": "24OFF",
+  "off": 0.24,
+  "valid": "1Apr"
+ },
+ {
+  "id": 8,
+  "name": "26% OFF",
+  "key": "26OFF",
+  "off": 0.26,
+  "valid": "10Apr"
+ },
+ {
+  "id": 9,
+  "name": "16% OFF",
+  "key": "16OFF",
+  "off": 0.05,
+  "valid": "2Apr"
+ },
+ {
+  "id": 10,
+  "name": "29% OFF",
+  "key": "29OFF",
+  "off": 0.29,
+  "valid": "19Apr"
+ }
+]
