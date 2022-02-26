@@ -2,7 +2,7 @@
 import NavBar from '../Navbar'
 import { Row, Col, Container, Card, Form, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import offer from '../offers.json'
 import Ratings from './rating'
 

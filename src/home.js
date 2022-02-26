@@ -1,6 +1,5 @@
 import logo from './assets/Vector.svg'
 import btn from './assets/button.svg'
-import hello from './assets/Hello.svg'
 import { Link } from 'react-router-dom'
 
 const Home = () => {

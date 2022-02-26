@@ -1,6 +1,5 @@
 import { Slide } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
-import s2 from '../assets/slide2.jpeg'
 import s3 from '../assets/slide3.jpg'
 
 const slideImages = [

@@ -5,12 +5,7 @@ import data from '../data'
 import { useState } from 'react'
 
 const Cart = () => {
-  // const x = 1
-  // const handle = (x) => {
-  //   if (x === 1) {
-  //     return <h3 style={{ color: '#858585' }}>End of page</h3>
-  //   }
-  // }
+ 
   const [cart, setcart] = useState(data)
   const handleDelete = (id) => {
     const newcart = cart.filter((d) => d.id !== id)
