@@ -44,7 +44,7 @@ const Details = () => {
                     <img
                       src={image}
                       alt=''
-                      srcset=''
+                      srcSet=''
                       style={{ width: '100%', borderRadius: '10px' }}
                     />
                   </Col>

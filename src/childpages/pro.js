@@ -27,7 +27,7 @@ const Pro = () => {
                 <hr />
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Exclusive Packages</h5>
@@ -35,7 +35,7 @@ const Pro = () => {
                 </Row>
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Exclusive Packages</h5>
@@ -43,7 +43,7 @@ const Pro = () => {
                 </Row>
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Exclusive Discounts</h5>
@@ -51,7 +51,7 @@ const Pro = () => {
                 </Row>
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Exclusive Offers</h5>
@@ -59,7 +59,7 @@ const Pro = () => {
                 </Row>
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Book now pay later</h5>
@@ -67,7 +67,7 @@ const Pro = () => {
                 </Row>
                 <Row>
                   <Col xs={4} style={{ textAlign: 'right' }}>
-                    <img src={tick} alt='' srcset='' />
+                    <img src={tick} alt='' srcSet='' />
                   </Col>
                   <Col xs={8} style={{ textAlign: 'left' }}>
                     <h5>Exclusive Membership</h5>

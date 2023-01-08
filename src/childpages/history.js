@@ -22,7 +22,7 @@ const History = () => {
                           <img
                             src={d.image}
                             alt=''
-                            srcset=''
+                            srcSet=''
                             style={{ width: '100%', height: '100px' }}
                           />
                         </Col>

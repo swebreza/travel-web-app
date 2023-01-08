@@ -20,7 +20,7 @@ const Packages = () => {
                       <img
                         src={pune}
                         alt=''
-                        srcset=''
+                        srcSet=''
                         style={{ width: '100%' }}
                       />
                     </Col>
@@ -62,7 +62,7 @@ const Packages = () => {
                       <img
                         src='https://images.indianexpress.com/2021/05/Bengaluru-Lockdown-1.jpg'
                         alt=''
-                        srcset=''
+                        srcSet=''
                         style={{ width: '100%' }}
                       />
                     </Col>

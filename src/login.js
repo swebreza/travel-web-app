@@ -16,7 +16,7 @@ const Login = () => {
       }}
     >
       <div>
-        <img src={logo} alt='' srcset='' className='App-logo ' />
+        <img src={logo} alt='' srcSet='' className='App-logo ' />
         <div className='App-header'>
           <Form>
             <Form.Group>
@@ -65,13 +65,13 @@ const Login = () => {
           <Container>
             <Row>
               <Col>
-                <img src={facebook} alt='' srcset='' className='facebook' />
+                <img src={facebook} alt='' srcSet='' className='facebook' />
               </Col>
               <Col>
-                <img src={twitter} alt='' srcset='' className='twitter' />
+                <img src={twitter} alt='' srcSet='' className='twitter' />
               </Col>
               <Col>
-                <img src={google} alt='' srcset='' className='google' />
+                <img src={google} alt='' srcSet='' className='google' />
               </Col>
             </Row>
           </Container>
