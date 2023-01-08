@@ -45,7 +45,7 @@ const NavBar = () => {
         <Container fluid>
           <Navbar.Brand href='#' style={{ color: '#fff' }}>
             <Link to='/initial/index'>
-              <img src={logo} alt='' srcset='' />
+              <img src={logo} alt='' srcSet='' />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -62,7 +62,7 @@ const NavBar = () => {
                   to='/initial/index'
                   style={{ textDecoration: 'none', color: 'black  ' }}
                 >
-                  <img src={profile} alt='' srcset='' className='items' />
+                  <img src={profile} alt='' srcSet='' className='items' />
                   Suweb Reza
                 </Link>
               </Offcanvas.Title>
@@ -74,7 +74,7 @@ const NavBar = () => {
                     to='../childpages/cart'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={cart} alt='' srcset='' />
+                    <img src={cart} alt='' srcSet='' />
                     cart
                   </Link>
                 </Nav.Link>
@@ -83,7 +83,7 @@ const NavBar = () => {
                     to='../childpages/history'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={history} alt='' srcset='' />
+                    <img src={history} alt='' srcSet='' />
                     history
                   </Link>
                 </Nav.Link>
@@ -92,7 +92,7 @@ const NavBar = () => {
                     to='../childpages/feedback'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={feedback} alt='' srcset='' />
+                    <img src={feedback} alt='' srcSet='' />
                     feedback
                   </Link>
                 </Nav.Link>
@@ -101,7 +101,7 @@ const NavBar = () => {
                     to='../childpages/offers'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={offers} alt='' srcset='' />
+                    <img src={offers} alt='' srcSet='' />
                     offers
                   </Link>
                 </Nav.Link>
@@ -110,7 +110,7 @@ const NavBar = () => {
                     to='../childpages/dos'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={dos} alt='' srcset='' />
+                    <img src={dos} alt='' srcSet='' />
                     dos
                   </Link>
                 </Nav.Link>
@@ -119,13 +119,13 @@ const NavBar = () => {
                     to='../childpages/dons'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={done} alt='' srcset='' />
+                    <img src={done} alt='' srcSet='' />
                     done
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link to='' style={{ textDecoration: 'none' }}>
-                    <img src={logout} alt='' srcset='' />
+                    <img src={logout} alt='' srcSet='' />
                     logout
                   </Link>
                 </Nav.Link>
@@ -134,7 +134,7 @@ const NavBar = () => {
                     to='../childpages/pro'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={pro} alt='' srcset='' />
+                    <img src={pro} alt='' srcSet='' />
                     pro
                   </Link>
                 </Nav.Link>
@@ -143,7 +143,7 @@ const NavBar = () => {
                     to='../childpages/packages'
                     style={{ textDecoration: 'none' }}
                   >
-                    <img src={pro} alt='' srcset='' />
+                    <img src={pro} alt='' srcSet='' />
                     Packages
                   </Link>
                 </Nav.Link>
@@ -158,7 +158,7 @@ const NavBar = () => {
                   onChange={handleChange}
                 />
                 <button>
-                  <img src={search} alt='' srcset='' />
+                  <img src={search} alt='' srcSet='' />
                 </button>{' '}
               </Form>
               <ul>

@@ -23,7 +23,7 @@ const Offers = () => {
                         <img
                           src={offers}
                           alt=''
-                          srcset=''
+                          srcSet=''
                           style={{ width: '100%' }}
                         />
                       </Col>
@@ -42,7 +42,7 @@ const Offers = () => {
                             <Col xs={3}>
                               <CopyToClipboard text={d.key}>
                                 <a href='# ' style={{ width: '90%' }}>
-                                  <img src={copy} alt='' srcset='' />
+                                  <img src={copy} alt='' srcSet='' />
                                 </a>
                               </CopyToClipboard>
                             </Col>

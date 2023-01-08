@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <div className='home'>
-      <img src={logo} alt='' srcset='' className='App-logo ' />
+      <img src={logo} alt='' srcSet='' className='App-logo ' />
       <br />
       <br />
       <br />
