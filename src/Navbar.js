@@ -63,7 +63,7 @@ const NavBar = () => {
                   style={{ textDecoration: 'none', color: 'black  ' }}
                 >
                   <img src={profile} alt='' srcSet='' className='items' />
-                  Suweb Reza
+                  MD. Suweb Reza
                 </Link>
               </Offcanvas.Title>
             </Offcanvas.Header>
@@ -75,7 +75,7 @@ const NavBar = () => {
                     style={{ textDecoration: 'none' }}
                   >
                     <img src={cart} alt='' srcSet='' />
-                    cart
+                    carts
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
